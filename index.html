@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Sul ❤️</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090909;color:#fff;font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative}.glow{position:absolute;width:320px;height:320px;border-radius:50%;background:#8b0000;filter:blur(110px);opacity:.22}.card{position:relative;z-index:1;max-width:720px;width:100%;text-align:center;padding:42px 26px;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:rgba(20,20,20,.78);box-shadow:0 20px 80px rgba(0,0,0,.55)}.heart{font-size:48px;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.13)}}h1{font-size:clamp(38px,9vw,72px);margin:10px 0;color:#fff}h2{font-size:clamp(28px,7vw,46px);margin:14px 0;color:#fff}.red{color:#b30000}p{font-family:Arial,sans-serif;line-height:1.8;font-size:17px;color:#ddd}.story{margin:28px auto;max-width:580px}.quote{font-style:italic;font-size:20px;color:#eee;margin:30px 0}.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}.photos .photo{min-height:220px;border-radius:18px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#181818,#0c0c0c);color:#777;font-family:Arial,sans-serif;font-size:13px;padding:12px}.question{margin-top:38px}.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px}button{border:0;border-radius:999px;padding:15px 30px;font-size:17px;font-weight:bold;cursor:pointer;transition:.25s}.yes{background:#9e0000;color:#fff;box-shadow:0 8px 30px rgba(158,0,0,.3)}.yes:hover{transform:translateY(-3px) scale(1.03);background:#c00000}.no{background:#242424;color:#ddd}.no:hover{transform:translateY(-2px)}#answer{display:none;margin-top:28px;padding:22px;border-radius:18px;background:rgba(139,0,0,.18);border:1px solid rgba(179,0,0,.35)}.date{margin-top:24px;font-family:Arial,sans-serif;color:#aaa}.small{font-size:13px;color:#777;font-family:Arial,sans-serif;margin-top:35px}.fall{position:fixed;top:-30px;z-index:5;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}@media(max-width:560px){.photos{grid-template-columns:1fr}.photos .photo{min-height:180px}.card{padding:34px 20px}}
+</style>
+</head>
+<body>
+<section class="page">
+<div class="glow"></div>
+<div class="card">
+<div class="heart">❤️</div>
+<h1>Para <span class="red">Sul</span></h1>
+<p class="quote">“Nos conocimos sin intención alguna… pero quizás tenía que pasar.”</p>
+<div class="story">
+<p>Hay personas que llegan a nuestra vida sin que las estemos buscando. Sin planes, sin expectativas y sin imaginar todo lo que podrían llegar a significar.</p>
+<p>Así fue como te conocí. Sin intención alguna… y, sin darme cuenta, terminaste siendo alguien especial para mí.</p>
+<p>Por eso quise hacer algo diferente para decirte algo que quizá me costaría más decirte de frente.</p>
+</div>
+<div class="photos">
+<div class="photo">Tu foto aquí ❤️</div>
+<div class="photo">Nuestra historia aquí ✨</div>
+</div>
+<div class="question">
+<h2>¿Quieres ser mi novia?</h2>
+<p>No tienes que responder rápido. Solo quería que supieras lo que siento.</p>
+<div class="buttons">
+<button class="yes" onclick="yesAnswer()">Sí, quiero ❤️</button>
+<button class="no" id="noBtn" onclick="noAnswer()">Déjame pensarlo 😳</button>
+</div>
+<div id="answer">
+<h2>Entonces… <span class="red">es un sí</span> ❤️</h2>
+<p>Prometo hacer que esta historia que comenzó sin intención alguna tenga muchos momentos que sí queramos recordar.</p>
+<div class="date">Ahora solo falta elegir el lugar, la fecha y la hora de nuestra primera cita. ✨</div>
+</div>
+</div>
+<p class="small">Hecho especialmente para Sul.</p>
+</div>
+</section>
+<script>
+function yesAnswer(){document.getElementById('answer').style.display='block';for(let i=0;i<28;i++){setTimeout(()=>heart(),i*70)}}
+function noAnswer(){const b=document.getElementById('noBtn');b.textContent=['¿Segura? 😳','Piénsalo otra vez ❤️','Solo di que sí 🙈'][Math.floor(Math.random()*3)];}
+function heart(){const h=document.createElement('div');h.className='fall';h.textContent=['❤️','💗','💕','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(2.5+Math.random()*2.5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),5500)}
+</script>
+</body>
+</html>
