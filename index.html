@@ -5,44 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para Sul ❤️</title>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090909;color:#fff;font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative}.glow{position:absolute;width:320px;height:320px;border-radius:50%;background:#8b0000;filter:blur(110px);opacity:.22}.card{position:relative;z-index:1;max-width:720px;width:100%;text-align:center;padding:42px 26px;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:rgba(20,20,20,.78);box-shadow:0 20px 80px rgba(0,0,0,.55)}.heart{font-size:48px;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.13)}}h1{font-size:clamp(38px,9vw,72px);margin:10px 0;color:#fff}h2{font-size:clamp(28px,7vw,46px);margin:14px 0;color:#fff}.red{color:#b30000}p{font-family:Arial,sans-serif;line-height:1.8;font-size:17px;color:#ddd}.story{margin:28px auto;max-width:580px}.quote{font-style:italic;font-size:20px;color:#eee;margin:30px 0}.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}.photos .photo{min-height:220px;border-radius:18px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#181818,#0c0c0c);color:#777;font-family:Arial,sans-serif;font-size:13px;padding:12px}.question{margin-top:38px}.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px}button{border:0;border-radius:999px;padding:15px 30px;font-size:17px;font-weight:bold;cursor:pointer;transition:.25s}.yes{background:#9e0000;color:#fff;box-shadow:0 8px 30px rgba(158,0,0,.3)}.yes:hover{transform:translateY(-3px) scale(1.03);background:#c00000}.no{background:#242424;color:#ddd}.no:hover{transform:translateY(-2px)}#answer{display:none;margin-top:28px;padding:22px;border-radius:18px;background:rgba(139,0,0,.18);border:1px solid rgba(179,0,0,.35)}.date{margin-top:24px;font-family:Arial,sans-serif;color:#aaa}.small{font-size:13px;color:#777;font-family:Arial,sans-serif;margin-top:35px}.fall{position:fixed;top:-30px;z-index:5;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}@media(max-width:560px){.photos{grid-template-columns:1fr}.photos .photo{min-height:180px}.card{padding:34px 20px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080808;color:#f7f3ef;font-family:Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:radial-gradient(#fff .6px,transparent .6px);background-size:5px 5px}.wrap{max-width:760px;margin:auto;padding:22px 18px 70px}.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center}.hero-inner{animation:rise 1.1s ease both}.kicker{letter-spacing:.28em;text-transform:uppercase;color:#d9a4ad;font-size:11px}.heart{font-size:34px;animation:pulse 1.8s infinite}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:600}h1{font-size:clamp(50px,14vw,90px);line-height:.95;margin:18px 0}h2{font-size:clamp(36px,9vw,64px);margin:14px 0}p{line-height:1.8;color:#c8c1bd;font-size:16px}.lead{max-width:540px;margin:0 auto 28px;font-size:18px}.btn,button{border:1px solid rgba(255,255,255,.17);background:rgba(255,255,255,.06);color:#fff;padding:14px 22px;border-radius:999px;cursor:pointer;font-size:15px;text-decoration:none;transition:.25s}.btn:hover,button:hover{transform:translateY(-2px);background:rgba(181,31,59,.25)}section{padding:55px 0}.card{background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.35)}.story{text-align:center}.story .big{font-family:Georgia,serif;font-size:clamp(25px,5vw,37px);line-height:1.4;color:#f7f3ef}.photo{width:100%;min-height:280px;border-radius:24px;object-fit:cover;display:block;background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid rgba(255,255,255,.1)}.photo-note{text-align:center;color:#777;font-size:13px;margin-top:10px}.question{text-align:center}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}.yes{background:linear-gradient(135deg,#b51f3b,#781428);border:none;font-weight:bold;box-shadow:0 10px 35px rgba(181,31,59,.28)}#answer{display:none;margin-top:30px}.answer-card{background:rgba(181,31,59,.12);border:1px solid rgba(181,31,59,.35);border-radius:22px;padding:24px}.small{font-size:12px;color:#68625f;text-align:center;margin-top:45px}.reveal{opacity:0;transform:translateY(28px);transition:1s ease}.reveal.show{opacity:1;transform:none}.fall{position:fixed;top:-30px;z-index:5;pointer-events:none;animation:fall linear forwards}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}@keyframes pulse{50%{transform:scale(1.12)}}@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}@media(max-width:560px){.card{padding:23px;border-radius:23px}.photo{min-height:220px}}
 </style>
 </head>
 <body>
-<section class="page">
-<div class="glow"></div>
-<div class="card">
-<div class="heart">❤️</div>
-<h1>Para <span class="red">Sul</span></h1>
-<p class="quote">“Nos conocimos sin intención alguna… pero quizás tenía que pasar.”</p>
-<div class="story">
-<p>Hay personas que llegan a nuestra vida sin que las estemos buscando. Sin planes, sin expectativas y sin imaginar todo lo que podrían llegar a significar.</p>
-<p>Así fue como te conocí. Sin intención alguna… y, sin darme cuenta, terminaste siendo alguien especial para mí.</p>
-<p>Por eso quise hacer algo diferente para decirte algo que quizá me costaría más decirte de frente.</p>
+<div class="wrap">
+<div class="hero"><div class="hero-inner"><div class="heart">❤️</div><div class="kicker">Una pequeña sorpresa para</div><h1>Sul</h1><p class="lead">Nos conocimos sin intención alguna… pero quizá la vida tenía otros planes.</p><a class="btn" href="#historia">Descubrir la historia ↓</a></div></div>
+<section id="historia" class="reveal"><div class="card story"><div class="kicker">Nuestra historia</div><p class="big">Hay historias que empiezan con un plan… y otras que simplemente suceden.</p><p>La nuestra fue así. Nos conocimos sin buscarlo, sin planearlo y sin imaginar todo lo que podía venir después.</p><p>Y poco a poco, casi sin darme cuenta, empezaste a convertirte en alguien especial para mí.</p></div></section>
+<section class="reveal"><div class="card"><img class="photo" src="FOTO_1.jpg" alt="Un recuerdo juntos"><p class="photo-note">Uno de esos momentos que ahora significan mucho más. ❤️</p></div></section>
+<section class="reveal"><div class="card story"><p class="big">Me gusta cómo me siento cuando estoy contigo.</p><p>Me gustan nuestras conversaciones, nuestras risas y esos pequeños momentos que quizá parecen normales, pero que yo termino recordando.</p><p>Si algo he aprendido, es que algunas de las mejores cosas de la vida suceden cuando menos las planeamos.</p></div></section>
+<section class="reveal"><div class="card"><img class="photo" src="FOTO_2.jpg" alt="Otro recuerdo juntos"><p class="photo-note">Y espero que este sea solo el comienzo. ✨</p></div></section>
+<section class="reveal"><div class="card question"><div class="heart">❤️</div><div class="kicker">Sul, tengo una pregunta</div><h2>¿Quieres ser<br>mi novia?</h2><p>No sé exactamente qué responderás, pero sí sé algo: me encantaría descubrir contigo qué puede pasar después.</p><div class="actions"><button class="yes" onclick="yesAnswer()">SÍ ❤️</button><button onclick="yesAnswer()">Claro que sí 🥰</button></div><div id="answer"><div class="answer-card"><div class="heart">🥹❤️</div><h2>Entonces ya está.</h2><p>Ahora oficialmente puedo decir que tengo novia.</p><p>Y esto apenas comienza…</p><p><strong>Te tengo preparada una cita. ❤️</strong></p><p class="photo-note">📍 Aquí puedes poner el lugar<br>📅 Aquí puedes poner la fecha<br>⏰ Aquí puedes poner la hora</p></div></div></div></section>
+<p class="small">Hecho especialmente para Sul ❤️</p>
 </div>
-<div class="photos">
-<div class="photo">Tu foto aquí ❤️</div>
-<div class="photo">Nuestra historia aquí ✨</div>
-</div>
-<div class="question">
-<h2>¿Quieres ser mi novia?</h2>
-<p>No tienes que responder rápido. Solo quería que supieras lo que siento.</p>
-<div class="buttons">
-<button class="yes" onclick="yesAnswer()">Sí, quiero ❤️</button>
-<button class="no" id="noBtn" onclick="noAnswer()">Déjame pensarlo 😳</button>
-</div>
-<div id="answer">
-<h2>Entonces… <span class="red">es un sí</span> ❤️</h2>
-<p>Prometo hacer que esta historia que comenzó sin intención alguna tenga muchos momentos que sí queramos recordar.</p>
-<div class="date">Ahora solo falta elegir el lugar, la fecha y la hora de nuestra primera cita. ✨</div>
-</div>
-</div>
-<p class="small">Hecho especialmente para Sul.</p>
-</div>
-</section>
 <script>
-function yesAnswer(){document.getElementById('answer').style.display='block';for(let i=0;i<28;i++){setTimeout(()=>heart(),i*70)}}
-function noAnswer(){const b=document.getElementById('noBtn');b.textContent=['¿Segura? 😳','Piénsalo otra vez ❤️','Solo di que sí 🙈'][Math.floor(Math.random()*3)];}
+const observer=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
+function yesAnswer(){document.getElementById('answer').style.display='block';document.getElementById('answer').scrollIntoView({behavior:'smooth',block:'center'});for(let i=0;i<28;i++)setTimeout(heart,i*70)}
 function heart(){const h=document.createElement('div');h.className='fall';h.textContent=['❤️','💗','💕','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(2.5+Math.random()*2.5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),5500)}
 </script>
 </body>
